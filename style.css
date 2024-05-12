@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu Sans", sans-serif;
+  font-size: medium;
+  line-height: 1.3em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  /* border: 1px solid red; */
+  padding: 0.8rem 1.5rem;
+  height: 90px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.658);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.container {
+  /* border: 1px solid rgb(98, 0, 255); */
+  padding: 0.4rem 1.8rem;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  color: #00b289;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.menu {
+  padding: 0.2rem 1rem;
+}
+
+.menu-bar {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-item {
+  position: relative;
+  padding: 0.5rem;
+}
+
+/* Toggle work start */
+
+#dropdown1 {
+  display: none;
+}
+
+#dropdown1 {
+  position: absolute;
+  left: -8rem;
+  top: 3.1rem;
+  padding: 1.5rem;
+  width: 350px;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  z-index: 1;
+  box-shadow: -2px -1px 15px rgb(190, 187, 187);
+}
+
+.dropdown-menu {
+  display: grid;
+  gap: 1.8rem;
+}
+
+.dropdown-item {
+  border-bottom: 1px solid rgb(91, 88, 88);
+}
+
+.dropdown-link {
+  color: black;
+}
+
+.dropdown-item-container {
+  padding: 1rem 0.3rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.dropdown-link-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.dropdown-link-title ~ p {
+  font-size: 0.95rem;
+}
+
+#dropdown2 {
+  display: "";
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #4c4d5f;
+  transition: all 0.4s ease-in;
+}
+
+.nav-link:hover {
+  color: black;
+}
+
+.fa-solid {
+  font-size: 0.9rem;
+}
+
+.buttons {
+  /* border: 1px solid rgb(65, 43, 205); */
+  padding: 0.5rem;
+  display: flex;
+  gap: 2rem;
+}
+
+button {
+  padding: 0.7rem 1.2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #00b289;
+  background: transparent;
+  font-weight: 600;
+}
+
+.signup-btn {
+  color: white;
+  background-color: #00b289;
+}
+
+.signup-btn:hover {
+  background-color: #049c78c7;
+}
+
+.login-btn {
+  color: #00b289;
+}
+
+.login-btn:hover {
+  background-color: #00b289;
+  transition: all 0.3s ease-in-out;
+  color: white;
+}
+
+.hamburger {
+  display: none;
+  /* border: 1px solid red; */
+  padding: 0.2rem;
+}
+
+.bar {
+  display: block;
+  width: 26px;
+  height: 3px;
+  margin: 5px auto;
+  border-radius: 7px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+/* responsive header  */
+@media only screen and (max-width: 990px) {
+  .hamburger {
+    display: block;
+  }
+
+  .buttons {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+}
