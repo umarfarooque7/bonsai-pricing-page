@@ -21,6 +21,7 @@ a {
 
 header {
   /* border: 1px solid red; */
+  place-content: center;
   padding: 0.8rem 1.5rem;
   height: 90px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.658);
@@ -60,11 +61,7 @@ header {
 
 /* Toggle work start */
 
-#dropdown1 {
-  display: none;
-}
-
-#dropdown1 {
+.dropdown {
   position: absolute;
   left: -8rem;
   top: 3.1rem;
@@ -76,9 +73,26 @@ header {
   box-shadow: -2px -1px 15px rgb(190, 187, 187);
 }
 
+.dropdown-toggle {
+  display: none;
+}
+
+#dropdown2 {
+  padding: 2rem;
+  width: 300px;
+}
+
 .dropdown-menu {
   display: grid;
   gap: 1.8rem;
+}
+
+.dropdown2-item {
+  padding: 0.5rem;
+}
+
+.dropdown2-item:hover {
+  background-color: #efefefe7;
 }
 
 .dropdown-item {
@@ -93,6 +107,11 @@ header {
   padding: 1rem 0.3rem;
   display: grid;
   gap: 1rem;
+}
+
+.dropdown-item-container:hover {
+  background-color: #efefefe7;
+  transition: all 0.3s ease-in;
 }
 
 .dropdown-link-title {
@@ -110,7 +129,7 @@ header {
 }
 
 .nav-link {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 400;
   color: #4c4d5f;
   transition: all 0.4s ease-in;
@@ -161,12 +180,34 @@ button {
 }
 
 .hamburger {
+  position: relative;
+  cursor: pointer;
   display: none;
-  /* border: 1px solid red; */
-  padding: 0.2rem;
+  padding: 0 0.2rem;
+  border-radius: 2px;
 }
 
-.bar {
+.bars {
+  position: absolute;
+  top: -1rem;
+}
+
+
+.cross {
+  position: absolute;
+  top: -1rem;
+  display: none;
+}
+
+.fa-bars {
+  font-size: 2rem;
+}
+
+.fa-xmark {
+  font-size: 2rem;
+}
+
+/* .bar {
   display: block;
   width: 26px;
   height: 3px;
@@ -174,11 +215,11 @@ button {
   border-radius: 7px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #101010;
-}
+  background-color: #3e3c3cce;
+} */
 
 /* responsive header  */
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 980px) {
   .hamburger {
     display: block;
   }
@@ -190,4 +231,19 @@ button {
   .menu {
     display: none;
   }
+
+  /* .active {
+    left: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger .active.bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  } */
 }
