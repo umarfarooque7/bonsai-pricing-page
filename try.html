@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100vh;
+            
+        }
+        .card-container {
+            border: 2px solid red;
+            padding: 1rem;
+            display: flex;
+            gap: 1rem;
+
+        }
+
+        .card {
+            border: 1px solid red;
+            width: 30%;
+            /* margin: 0 auto; */
+            height: 350px;
+            background-color: rgb(138, 198, 114);
+        }
+
+        @media only screen and (max-width: 880px) {
+            .card-container {
+                display: block;
+                width: 100%;
+            }
+
+            .card {
+                width: 100%;
+            }
+  }
+
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+    </div>
+</body>
+</html>

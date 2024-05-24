@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <style>
+        body {
+          height: 100vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+  
+        a {
+           text-decoration: none;
+        }
+  
+        .main-container {
+          width: 60%;
+          margin: 0 auto;
+          padding: 1rem;
+          display: flex;
+          justify-content: space-between;
+          box-shadow: 0px 0px 5px rgba(142, 140, 140, 0.607);
+          border-radius: 14px;
+          
+        }
+  
+        .text-container {
+          background-color: #dbd7d7be;
+          padding: 0.5rem;
+          width: 40%;
+          text-align: center;
+          place-content: center;
+          display: grid;
+          gap: 7rem;
+          border-radius: 8px;
+        }
+  
+        .title {
+          font-size: 1.8rem;
+          font-family: 600;
+          color: #00b289;
+        }
+  
+        .title-container > p {
+          font-size: 1rem;
+          font-weight: 600;
+        }
+  
+        .text-container > p {
+          font-size: 0.9rem;
+          font-weight: 300;
+          padding: 0.5rem;
+
+
+        }
+  
+        .login-container {
+          width: 55%;
+          /* border: 1px solid rgb(13, 13, 24); */
+          padding: 0.5rem;
+          /* text-align: center;
+          place-content: center; */
+          text-align: center;
+        }
+  
+        .login-title {
+          font-size: 2rem;
+          color: #00b289;
+          text-transform: capitalize;
+        }
+  
+        .username {
+          /* border: 1px solid; */
+          padding: 1rem 0rem;
+        }
+  
+        .password {
+          /* border: 1px solid; */
+          padding: 1rem 0rem;
+        }
+  
+        input {
+          padding: 0.8rem 3rem;
+          border-radius: 5px;
+          border: 0.5px solid black;
+        }
+  
+        .btn {
+          padding-top: 1.5rem;
+          padding-bottom: 0.3rem;
+        }
+  
+        button {
+          padding: 0.5rem 7rem;
+          border-radius: 7px;
+          border: 1px solid #000000;
+          background: transparent;
+          background: #00b289;
+        }
+  
+        button:hover {
+          background-color:  #00b288ca;
+          transition: all 0.3s ease;
+        }
+  
+        /* responisve in 850  */
+  
+      </style>
+</head>
+<body>
+    <main>
+        <form action="action_page.php" method="post">
+          <div class="main-container">
+            <div class="text-container">
+              <div class="title-container">
+                <h3 class="title">bonsai</h3>
+                <p>Join 500,000+ freelancers and agencies using Bonsai.</p>
+              </div>
+              <p >
+                Anyone doing #freelance work should use @bonsaiinc. It's amazing and saves boatloads of time.
+               
+              </p>
+            </div>
+            <div class="login-container">
+              <h3 class="login-title">Sign Up</h3>
+              <p>Try Bonsai free with your Workflow today</p>
+              <div class="username">
+                <label for="username"></label>
+                <input
+                  type="text"
+                  placeholder="Enter your mail"
+                  name="uname"
+                  required
+                />
+              </div>
+  
+              <div class="password">
+                <label for="psw"></label>
+                <input
+                  type="password"
+                  placeholder="Create Password"
+                  name="psw"
+                  required
+                />
+              </div>
+              <div class="btn">
+                <button type="submit">Sign Up</button>
+              </div>
+              <div class="sign-up">
+                <p>already have an account <a href="./forms.html">logIn</a></p>
+              </div>
+            </div>
+          </div>
+        </form>
+      </main>
+</body>
+</html>
