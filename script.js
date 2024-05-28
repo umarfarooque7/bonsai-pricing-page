@@ -24,9 +24,19 @@ const cross = document.querySelector(".cross");
 
 
 hamburger.addEventListener("click", function () {
-
     console.log("Hello World!")
     bar.style.display = 'none'
     cross.style.display = 'block'
-
 });
+
+// FAQ Js 
+const faq = document.querySelector(".question-one");
+// const aboutquestion = document.querySelectorAll(".about");
+// const about = document.getElementById("about");
+
+faq.addEventListener("click", function() {
+    var aboutcontent = document.getElementById("content");
+    console.log("Hello");
+    aboutcontent.classList.toggle("hidden");
+
+})
